@@ -1,0 +1,352 @@
+/* fonts */
+@font-face {
+    font-family: 'Hind-SemiBold';
+    src: local('Hind-Bold'), url('/static/fonts/Hind-SemiBold.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Hind-Medium';
+    src: local('Hind-Medium'), url('/static/fonts/Hind-Medium.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'RopaSans-Regular';
+    src: local('Hind-Bold'), url('/static/fonts/RopaSans-Regular.woff') format('woff');
+  }
+  
+  body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #FFE3E3;
+  }
+
+/* menu override about */
+  #menu{
+    margin-top: 14vh;
+  }
+
+  .opacity{
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  
+
+  
+      /* .menuIcon::before{
+        content: "";
+        position: absolute;
+        width: 9vw;
+        height: 0.4vh;
+        top: 2.3vh;
+        left: 3vw;
+        background-color: black;
+        box-shadow: 0 2vh;
+      } */
+  
+      /* .menuIcon::after{
+        content: "";
+        position: absolute;
+        width: 4vw;
+        height: 0.5vh;
+      } */
+
+/* +++++++++++++++++++++++++++++++
+  main
+  +++++++++++++++++++++++++++++++ */  
+
+    #aboutMain{
+        font-family: 'Hind-Regular', sans-serif;
+        padding-top: 1.5vh;
+        /* position: relative; */
+
+    }  
+    
+    h1{
+      font-size: 3.5em;
+      color: #E989AB;
+      font-family: 'RopaSans-Regular', sans-serif;
+      text-decoration: underline;
+        text-decoration-color: currentcolor;
+        text-decoration-thickness: auto;
+      text-decoration-thickness: 0.8vh;
+      text-decoration-color: black;
+      line-height: 1.2em;
+      letter-spacing: 0.05em;
+      margin: 19vh 7vw 1vh; 
+    }
+
+    .whoTitle, .howTitle{
+        font-size: 1.7em;
+    }
+    
+    .aboutItems{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Hind-Medium', sans-serif;
+        margin: 0vw 0 12vw 8vw;
+        position: relative;
+    }
+
+    .why, .what, .when, .where, .how, .who{
+        display: flex;
+        height: 8vh;
+    }
+
+
+    h2{
+        flex:1;
+        font-size: 1.7em;
+        position: relative;
+        z-index: 100;
+    }
+
+    h2::before{
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 0.5vh;
+      background-color: #E989AB;
+      z-index: -100;
+      bottom: -2vh;
+      left: 0;
+    }
+
+    .h2Toggle{
+        flex: none;
+        width: 15vw;
+        font-size: 3em;
+        transition: width 1s font-size 1s;
+    }
+
+    .bar{
+        flex:1;
+        margin-left: -50vw;
+        margin-top: 12vw;
+        display: none;
+    }
+
+    .bar img{
+        width: 60vw;
+    }
+
+    .barOpacity{
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .arrow, .arrowWhy{
+        flex:0.5;
+        margin: 8vh 0 0 -4vw;
+        display: none;
+    }
+
+    .arrow img, .arrowWhy img{
+        width: 5vw;
+    }
+
+    .arrowRotate{
+        animation: arrowRot 1s 1 forwards;
+        margin-right: 4vw;
+    }
+
+    @keyframes arrowRot{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(180deg);}
+
+        
+    }
+
+    .typeBox{
+        width: 50vw;
+        margin: 8vw;
+        margin: 4em;
+    }
+
+    .typeBox p{
+        font-size: 2em;
+    }
+
+    .typeBoxWhere{
+      width: 44vw;;
+    }
+
+    .typeBoxWhere img{
+      width: 50vw;
+  }
+
+    .whyMargin{
+        padding-bottom: 5vh;
+    }
+
+    .whatMargin{
+        padding-bottom: 9vh;
+    }
+
+    .whenMargin{
+        padding-bottom: 0vh;
+    }
+
+    .whereMargin{
+        padding-bottom: 55vh;
+    }
+
+    /* .where img{
+        width: 58vw;
+    } */
+
+    .whoMargin{
+        padding-bottom: 28vh;
+    }
+
+    .howMargin{
+        padding-bottom: 45vh;
+    }
+    
+
+
+ /* +++++++++++++++++++++++++++++++
+  footer
+  +++++++++++++++++++++++++++++++ */  
+
+
+footer{
+    display: flex;
+    background: black;
+    
+  }
+  
+  footer p{
+    margin: 3vh 0 0 0;
+    text-decoration: underline;
+  
+  }
+  
+  .footerMenu{
+    font-family: 'Hind-SemiBold', sans-serif;
+    font-size: 2em;
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 4vw;
+  }
+  
+  .footerAccess{color: #E6F4E6;}
+  .footerBlank{}
+  .footerAbuse{margin-top: 1vh; color: #FFE3E3;}
+  .footerMap{margin-top: 1vh; color: #F8E9FF;}
+  .footerEmail{margin-top: -1vh; color: #E1EFF5;}
+  .footerSurvey{margin-top: -1vh; color: #E6F4E6;}
+  
+  .footerLogo{
+    flex: 1;
+    margin-top: 2vh;
+  }
+  
+  .footerLogo img{
+    width: 25vw;
+    animation: footerLogoRotate 10s infinite alternate-reverse;
+  }
+  
+  @keyframes footerLogoRotate{
+    0%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+  }
+  
+  .gradBar{
+    height: 3vw;
+  background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
+  margin-top: -1vh;
+  }
+
+  @media (min-width: 768px) {
+
+    h1 {
+      font-size: 6em;
+      margin: 15vh 7vw 0;
+    }
+
+    h2{
+      font-size: 2.5em;
+    }
+
+    h2::before {
+      bottom: -3vh;
+    }
+
+    .why, .what, .when, .where, .how, .who {
+      display: flex;
+      height: 9vh;
+    }
+
+    .whoTitle, .howTitle {
+      font-size: 2.5em;
+    }
+
+    /* .bar {
+      margin-top: 6vw; 
+       display: none;
+    } */
+
+  }
+
+ 
+
+  @media (min-width: 1200px) {
+    h1{
+      text-align: center;
+      margin-top: 25vh;
+      font-size: 5em;
+    }
+
+    h2, .whoTitle, .howTitle{
+      font-size: 2em;
+    }
+
+    .typeBox p {
+      font-size: 1.5em;
+    }
+
+    .why, .what, .when, .where, .how, .who {
+      height: 10vh;
+
+  }
+
+  .footerMenu {
+    font-size: 1.5em;}
+
+    .footerLogo img {
+      width: 16vw;
+
+}
+
+#menu {
+  font-family: 'Hind-Medium', sans-serif;
+  font-size: 1.75em;
+  margin-top: 21vh;
+}
+
+.barOneRot {
+  transform: rotate(45deg);
+  margin: 4vh auto 0;
+}
+
+.barTwoRot {
+  transform: rotate(-45deg);
+  margin: 0vh auto 0;
+}
+
+
+
+
+  }
+
+  
+
+
+
+
+  

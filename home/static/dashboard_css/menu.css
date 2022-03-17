@@ -1,0 +1,333 @@
+ 
+
+  @font-face {
+    font-family: 'Hind-Medium';
+    src: local('Hind-Medium'), url('/static/fonts/Hind-Medium.woff') format('woff');
+  }
+
+  /* +++++++++++++++++++++++++++++++
+ menu
+  +++++++++++++++++++++++++++++++ */ 
+
+  #menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(248,233,255);
+    background: -moz-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+    background: -webkit-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+    background: linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1);  
+    font-family: 'Hind-Medium', sans-serif;
+    font-size: 1.6em;
+    text-align: right;
+    height: 82vh;
+    margin-top: 0vh;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+#menuNetwork{
+  margin-top: -5vh;
+}
+
+
+#menu a{
+  text-decoration: none;
+  color: black;
+  transition: 1s text-decoration;
+}
+
+#menu a:hover{
+  text-decoration: underline;
+}
+
+#menu div{
+    margin: 0 8vw 0 0;
+    margin: 4vh 8vw 0 0;
+}
+
+
+  /* +++++++++++++++++++++++++++++++
+  header
+  +++++++++++++++++++++++++++++++ */
+  
+  #header{
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    }
+    
+    .topBarMenu{
+      width: 101vw;
+      display: flex;
+    }
+    
+    .logo{
+      flex: 1;
+    }
+          .logo img{
+            width: 30vw;
+            margin: 1.5em 1em 0;
+          }
+    
+    .menuIcon{
+      background: rgb(248,233,255);
+      background: -moz-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+      background: -webkit-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+      background: linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1);
+        height: 7vh;
+        width: 7vh;
+        margin: 2em;
+        position: relative;
+    }
+  
+    .barOne, .barTwo{
+        width: 10vw;
+        height: 0.5vh;
+        background: black;
+        margin: 2vh auto 0;
+    }
+  
+    .barOneRot{
+      transform: rotate(45deg);
+      margin: 3vh auto 0;
+    }
+    .barTwoRot{
+      transform: rotate(-45deg);
+      margin: 0vh auto 0;
+  }
+
+
+
+/* +++++++++++++++++++++++++++++++
+footer
+  +++++++++++++++++++++++++++++++ */ 
+
+
+
+footer{
+    display: flex;
+    background: black;
+    position: absolute;
+    width: 100vw;
+    z-index: 5000;
+  }
+  
+  footer p{
+    margin: 3vh 0 0 0;
+  }
+  
+  .footerMenu{
+    font-family: 'Hind-SemiBold', sans-serif;
+    font-size: 0.8em;
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 4vw;
+  }
+  
+  .footerAccess{color: #E6F4E6;}
+  .footerBlank{}
+  .footerAbuse{margin-top: 1vh; color: #FFE3E3;}
+  .footerMap{margin-top: 1vh; color: #F8E9FF;}
+  .footerEmail{margin-top: -1vh; color: #E1EFF5;}
+  .footerSurvey{margin-top: -1vh; color: #E6F4E6;}
+  
+  .footerLogo {
+    flex: 1;
+    margin-top: 5vh;
+  }
+  
+  .footerLogo img{
+    width: 25vw;
+    animation: footerLogoRotate 10s infinite alternate-reverse;
+  }
+  
+  @keyframes footerLogoRotate{
+    0%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+  }
+  
+  .gradBar{
+    height: 3vw;
+    background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
+    margin-top: -1vh;
+  }
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .logo img {
+    width: 20vw;
+  }
+
+.menuIcon{
+  height: 10vw;
+  margin: 2em 3em 0;
+  }
+
+  .barOne, .barTwo {
+    width: 5.5vw;
+    height: 0.7vh;
+    margin: 2vh auto 0;
+}
+
+.scroll{
+  font-size: 2.7em;
+  padding: 0 0 0vh 0;
+  }
+
+  #main{
+    margin-top: 23vh;
+  }
+
+  .calendar, .journal, .map, .groups {
+    font-size: 3em;
+  }
+
+  .info {
+    font-size: 2em;
+    height: 5vh;
+    padding: 2vh 0 0 0;
+    text-align: center;
+  }
+
+  .footerMenu {
+    font-size: 1.2em;
+  }
+
+  .footerLogo img {
+    width: 14vw;
+  }
+
+  footer p {
+    margin: 2vh 0 0 0;
+  }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .logo img {
+    width: 13vw;
+    margin: 1.5em 4em 0;
+  }
+
+  /* .menuIcon {
+    height: 8vw;
+    width: 9vw;
+  }
+
+  .barOne, .barTwo {
+    margin: 4vh auto 0;
+  } */
+
+  .menuIcon {
+    height: 6vw;
+    width: 6vw;
+    margin: 2em 5em 0;
+  }
+
+  .barOne, .barTwo {
+    margin: 2.8vh auto 0;
+    width: 3.5vw;
+  }
+
+  .topBarMenu {
+    height: 22vh;
+  }
+
+  .scroll{
+    font-size: 1.7em;
+      position: absolute;
+      top: 11vh;
+      z-index: -100;
+      left: 24vw;
+      
+  }
+
+  #main{
+      margin-top: 21vh;
+  }
+
+  .calendar, .journal, .map, .groups {
+    margin: 5.5vh 0 0 8vw;
+    font-size: 2.3em;
+  }
+
+
+  .bgMainImg img {
+    width: 43vw;
+  }
+
+  .info{
+    padding: 2vh 0 3vh 0;
+  }
+
+  .footerLogo img {
+    width: 9vw;
+  }
+
+
+}
+
+@media (min-width: 1920px) {
+
+  .menuIcon {
+    height: 5vw;
+    width: 5vw;
+    margin: 4em 8em 0;
+  }
+
+  #menu{
+    font-size: 2.5em;
+  }
+
+  .barOne, .barTwo {
+    margin: 2.5vh auto 0;
+    width: 3.5vw;
+  }
+
+  .logo img {
+
+    margin: 2em 7em 0;
+  }
+
+  .footerLogo {
+    margin-top: 3vh;
+  }
+
+  .footerLogo img {
+    width: 8vw;
+  }
+
+  .footerMenu {
+    font-size: 1.5em;
+  }
+
+  scroll {
+    font-size: 2.5em;
+    left: 25vw;
+  }
+
+  .calendar, .journal, .map, .groups {
+    margin: 5.5vh 0 0 8vw;
+    font-size: 3.3em;
+
+}
+
+
+}
+
+
+
